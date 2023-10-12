@@ -1,0 +1,162 @@
+﻿@using Huawei.Btk.Application.Services.UserServices.Dtos;
+@model UserRegisterDto
+
+<style>
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+		-moz-appearance: textfield;
+	}
+</style>
+
+<div class="h1">Register</div>
+
+@if (TempData["RegisterError"] != null)
+{
+	<div class="container">
+		<div class="alert alert-danger">
+			@TempData["RegisterError"]
+		</div>
+	</div>
+}
+
+@if (TempData["RegisterSuccess"] != null)
+{
+	<div class="container">
+		<div class="alert alert-success">
+			@TempData["RegisterSuccess"]
+		</div>
+	</div>
+}
+
+<form class="container" method="post" asp-controller="Account" asp-action="Register">
+	<div class="row">
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Name" class="form-control" placeholder="">
+				<label asp-for="Name"></label>
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Surname" class="form-control" placeholder="">
+				<label asp-for="Surname"></label>
+				<span asp-validation-for="Surname" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Email" class="form-control" placeholder="">
+				<label asp-for="Email"></label>
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="PhoneNumber" class="form-control" placeholder="0XXX-XXX-XX-XX"
+					   data-slots="X" size="14">
+				<label asp-for="PhoneNumber" class=""></label>
+				<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Tall" class="form-control" placeholder="">
+				<label asp-for="Tall" class=""></label>
+				<span asp-validation-for="Tall" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Weight" class="form-control" placeholder="">
+				<label asp-for="Weight" class=""></label>
+				<span asp-validation-for="Weight" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Age" class="form-control" placeholder="">
+				<label asp-for="Age" class=""></label>
+				<span asp-validation-for="Age" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<select id="selectInput" asp-for="DefaultLanguage"
+						asp-items="@(IEnumerable<SelectListItem>)ViewBag.languages"
+						class="form-select">
+				</select>
+				<label asp-for="DefaultLanguage" class=""></label>
+				<span asp-validation-for="DefaultLanguage" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="Password" class="form-control" placeholder="">
+				<label asp-for="Password"></label>
+				<span asp-validation-for="Password" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 mt-3">
+			<div class="form-floating">
+				<input asp-for="PasswordConfirm" class="form-control" placeholder="">
+				<label asp-for="PasswordConfirm"></label>
+				<span asp-validation-for="PasswordConfirm" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="col-12 mt-3 d-flex justify-content-end">
+			<button type="submit" class="btn btn-primary">Register</button>
+		</div>
+	</div>
+</form>
+
+@section Scripts {
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
+				const pattern = el.getAttribute("placeholder"),
+					slots = new Set(el.dataset.slots || "_"),
+					prev = (j => Array.from(pattern, (c, i) => slots.has(c) ? j = i + 1 : j))(0),
+					first = [...pattern].findIndex(c => slots.has(c)),
+					accept = new RegExp(el.dataset.accept || "\\d", "g"),
+					clean = input => {
+						input = input.match(accept) || [];
+						return Array.from(pattern, c =>
+							input[0] === c || slots.has(c) ? input.shift() || c : c
+						);
+					},
+					format = () => {
+						const [i, j] = [el.selectionStart, el.selectionEnd].map(i => {
+							i = clean(el.value.slice(0, i)).findIndex(c => slots.has(c));
+							return i < 0 ? prev[prev.length - 1] : back ? prev[i - 1] || first : i;
+						});
+						el.value = clean(el.value).join``;
+						el.setSelectionRange(i, j);
+						back = false;
+					};
+				let back = false;
+				el.addEventListener("keydown", (e) => back = e.key === "Backspace");
+				el.addEventListener("input", format);
+				el.addEventListener("focus", format);
+				el.addEventListener("blur", () => el.value === pattern && (el.value = ""));
+			}
+		});
+	</script>
+}

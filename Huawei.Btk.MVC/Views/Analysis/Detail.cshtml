@@ -1,0 +1,16 @@
+﻿@model Analysis
+
+<div class="h1">My Analysis</div>
+
+<div class="mt-5">
+	@* @Model.Result *@
+
+	<td>
+		@foreach (var item in Model.Result.Split("\\n"))
+		{
+			@item
+
+			<br />
+		}
+	</td>
+</div>

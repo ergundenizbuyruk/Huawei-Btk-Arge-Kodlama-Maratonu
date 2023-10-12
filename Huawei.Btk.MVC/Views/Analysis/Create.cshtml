@@ -1,0 +1,14 @@
+﻿<div class="h2 mt-5">Add New Analysis</div>
+
+<form method="post" asp-controller="Analysis" asp-action="Create" enctype="multipart/form-data">
+	<div class="mt-5">
+		<label for="formFile" class="form-label">Lütfen analiz etmek istediğiniz ürünün fotoğrafını yükleyiniz.</label>
+		<input class="form-control" type="file" id="formFile" name="formFile">
+	</div>
+
+	<div class="mt-5 d-flex justify-content-end">
+		<button class="btn btn-primary" type="submit">Create</button>
+	</div>
+</form>
+
+

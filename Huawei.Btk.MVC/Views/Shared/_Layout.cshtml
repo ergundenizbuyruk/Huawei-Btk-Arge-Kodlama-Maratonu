@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Huawei.Btk.App</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Huawei.Btk.App.styles.css" asp-append-version="true" />
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Bilinçli Tüketici</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					@if (User.Identity.IsAuthenticated)
+					{
+						<ul class="navbar-nav flex-grow-1 d-flex justify-content-end pe-0 pe-md-5 align-items-center">
+							<li class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+										aria-expanded="false">
+									@User.Identity.Name.ToString()
+								</button>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li>
+										<a class="dropdown-item" asp-controller="Account" asp-action="Profile">
+											My Profile
+										</a>
+									</li>
+									<li>
+										<a type="button" class="dropdown-item" asp-controller="Account" asp-action="Logout">
+											Log out
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					}
+					else
+					{
+						<ul class="navbar-nav flex-grow-1 d-flex justify-content-end pe-0 pe-md-5 align-items-center">
+							<li>
+								<a type="button" class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Log in</a>
+							</li>
+						</ul>
+					}
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<main role="main" class="pb-3" style="min-height: 650px;">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2023 - Huawei - Btk
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

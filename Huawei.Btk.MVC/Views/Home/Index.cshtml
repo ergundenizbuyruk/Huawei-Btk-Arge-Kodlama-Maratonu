@@ -1,0 +1,39 @@
+﻿@model List<Analysis>
+
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center py-5 d-flex justify-content-between">
+	<div class="h2">My Analysis</div>
+	<div class="">
+		<a class="btn btn-primary" asp-controller="Analysis" asp-action="Create">Add New Analysis</a>
+	</div>
+</div>
+
+<table class="table table-hover mt-4">
+	<thead>
+		<tr>
+			<th scope="col">Result</th>
+			<th scope="col">Created Date</th>
+			<th scope="col"></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var analysis in Model)
+		{
+			<tr>
+				
+				
+				<td>@analysis.Result</td>
+				<td>@analysis.CreatedDate.ToString("dd/MM/yyyy")</td>
+				<td class="d-flex justify-content-end gap-3">
+					<a class="btn btn-sm btn-outline-primary" style="min-width: 70px;" 
+					asp-controller="Analysis" asp-action="Detail" asp-route-id="@analysis.Id">
+						Detail
+					</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

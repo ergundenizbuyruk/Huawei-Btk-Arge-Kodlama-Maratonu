@@ -1,0 +1,53 @@
+﻿@using Huawei.Btk.Application.Services.UserServices.Dtos;
+@model LoginDto
+
+<style>
+	.my-width {
+		width: 100%;
+	}
+
+	@@media screen and (min-width: 768px) {
+		.my-width {
+			width: 50%;
+		}
+	}
+
+	@@media screen and (min-width: 1200px) {
+		.my-width {
+			width: 35%;
+		}
+	}
+</style>
+
+@if (TempData["LoginMessage"] != null)
+{
+	<div class="alert alert-success">
+		@TempData["LoginMessage"]
+	</div>
+}
+
+<form method="post" class="d-flex justify-content-center mt-5" style="margin-top: 6rem;" 
+asp-controller="Account" asp-action="Login">
+	<div class="my-width">
+		<div class="mt-4 form-floating">
+			<input asp-for="Email" class="form-control" placeholder="" />
+			<label asp-for="Email"></label>
+			<span class="text-danger mt-1" asp-validation-for="Email"></span>
+		</div>
+
+		<div class="mt-4 form-floating">
+			<input asp-for="Password" class="form-control w-100 mt-1" placeholder="" />
+			<label asp-for="Password"></label>
+			<span class="text-danger mt-1" asp-validation-for="Password"></span>
+		</div>
+
+		<div class="mt-3">
+			<button class="btn btn-primary w-100 mt-1" type="submit">Giriş Yap</button>
+		</div>
+		<div class="mt-3 d-flex justify-content-center gap-2">
+			<label>Hesabın Yok mu?</label>
+			<a asp-controller="Account" asp-action="Register" style="text-decoration: none;">Kaydol</a>
+		</div>
+		<div class="text-danger mt-2">@(TempData["LoginError"] ?? "")</div>
+	</div>
+</form>
