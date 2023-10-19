@@ -29,27 +29,27 @@ good for them.
 ![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/33cc44b6-f3ae-4f63-bc08-2e0fc70aea06)
 
                                             
-
-The product is a snack made of corn meal, edible vegetable oil, spices,
-and condiments. It contains approximately 469.5 kcal of energy, 7.0 g of
-protein, 71.0 g of total carbohydrates, and 3.59 g of sugars per 100 g
-serving. The product also contains milk solids, maltodextrin, dextrose,
-and acidity regulators.
-
-**Unwanted Substance Analysis:**
-
-The product contains the following unwanted substances:
-
-**Lactose**: The product ***contains milk solids***, which means it
-contains lactose. This may be a problem for individuals who are lactose
-intolerant or have other dairy allergies.
-
-**Gluten**: The product ***does not contain gluten***, which is a relief
-for individuals with gluten-related allergies or intolerances.
-
-**Hazelnut**: The product ***does not contain hazelnut***, which is a
-common allergen.
-
+**OUTPUT**
+> ***The product is a snack made of corn meal, edible vegetable oil, spices,
+>and condiments. It contains approximately 469.5 kcal of energy, 7.0 g of
+>protein, 71.0 g of total carbohydrates, and 3.59 g of sugars per 100 g
+>serving. The product also contains milk solids, maltodextrin, dextrose,
+>and acidity regulators.
+>
+>**Unwanted Substance Analysis:**
+>
+>The product contains the following unwanted substances:
+>
+>**Lactose**: The product ***contains milk solids***, which means it
+>contains lactose. This may be a problem for individuals who are lactose
+>intolerant or have other dairy allergies.
+>
+>**Gluten**: The product ***does not contain gluten***, which is a relief
+>for individuals with gluten-related allergies or intolerances.
+>
+>**Hazelnut**: The product ***does not contain hazelnut***, which is a
+>common allergen.***
+>
 **Technical Architecture of the Project:**
 
 
