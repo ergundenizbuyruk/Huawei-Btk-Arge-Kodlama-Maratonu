@@ -1,8 +1,8 @@
 # huawei-btk-arge-kodlama-maratonu
-\[DEMO\] Mind Benders: Personalized Product Analysis with Artificial
+Mind Benders: Personalized Product Analysis with Artificial
 Intelligence
 
-** Personalized Product Analysis with Artificial Intelligence**
+**Personalized Product Analysis with Artificial Intelligence**
 
 Our application is designed to help users make informed and healthy
 choices when purchasing products. By uploading a photo of the product\'s
@@ -26,7 +26,7 @@ good for them.
 
 ![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/e2545374-c878-487e-b706-130b016314ad)
 
-                            ![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/33cc44b6-f3ae-4f63-bc08-2e0fc70aea06)
+![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/33cc44b6-f3ae-4f63-bc08-2e0fc70aea06)
 
                                             
 
@@ -72,7 +72,7 @@ common allergen.
     compatible this product is with the person and makes a detailed
     analysis about the product.
 
-> **AI field Steps**
+**AI field Steps**
 
 -   Making image to text with EasyOcr library with the image given by
     > the use
@@ -92,7 +92,7 @@ common allergen.
 
 -   Measuring the health of the product with a metric between 0 and 100.
 
-> **Services field Steps**
+**Services field Steps**
 
 -   **RDS**: Here we stored user information through MySQL service.
 
@@ -106,7 +106,7 @@ common allergen.
 -   **EIP**: We connected private IPs to public IPs through this
     > service.
 
-> **Innovatıons**
+**Innovatıons**
 
 -   Analyzing how compatible the product is with the person from the
     photo of a product that is not in the user\'s native language and
@@ -116,7 +116,7 @@ common allergen.
     content of the products with the help of the light of their phone
     using the application we made.
 
-> **Business Value**​​​​​​​
+**Business Value**​​​​​​​
 >
 > **CodeCheck** is an app that helps you visualize vital nutrition
 > information in a simple and intuitive manner. You can scan barcodes or
@@ -138,7 +138,7 @@ common allergen.
 >
 >                      - Product content cannot be analyzed
 >
-> **Conclusion**
+ **Conclusion**
 
 -   As a result of this project, visually impaired people will be able
     to learn the content of a product comfortably.
@@ -149,7 +149,7 @@ common allergen.
 
 -   In short, our overall goal is to create conscious consumers.
 
-> You can access the source code from this link below.
+ You can access the source code from this link below.
 >
 > **https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu**
 >
