@@ -55,7 +55,7 @@ common allergen.
 
 ![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/20349f9f-9f85-4134-a2b5-33870434fe3b)
 
-**Functıons**
+**FUNCTIONS**
 
 -   We have two applications in our system, one AI and one MVC. In the
     MVC application, users can register and login to the system.
@@ -72,27 +72,21 @@ common allergen.
     compatible this product is with the person and makes a detailed
     analysis about the product.
 
-**AI field Steps**
+**AI FIELD STEPS**
 
--   Making image to text with EasyOcr library with the image given by
-    > the use
+-   Making image-to-text with EasyOcr library with the image given by the use
 
-    -   Many alternatives such as *Huawei OCR* have been tried before
-        > this stage
+    -   Many alternatives such as *Huawei OCR* have been tried before this stage
 
--   Transforming the resulting string value into valuable information
-    > for the user by giving it to Meta and Microsoft\'s
-    > state-of-the-art LLM model Llama 2
+-   Transforming the resulting string value into valuable information for the user by giving it to Meta and Microsoft\'s state-of-the-art LLM model Llama 2
 
--   Translation back into the user\'s native language through this
-    > model.
+-   Translation back into the user\'s native language through this model.
 
-    -   Many alternatives such as *Huawei Text Translation* have been
-        > tried before this stage
+    -   Many alternatives such as *Huawei Text Translation* have been tried before this stage
 
 -   Measuring the health of the product with a metric between 0 and 100.
 
-**Services field Steps**
+**SERVICES FIELD STEPS**
 
 -   **RDS**: Here we stored user information through MySQL service.
 
@@ -100,13 +94,11 @@ common allergen.
 
 -   **SWR**: Here we had the opportunity to store our Docker images.
 
--   **CC**: Through this service, we created a Cluster environment and
-    > enabled our applications to run here.
+-   **CC**: Through this service, we created a Cluster environment and enabled our applications to run here.
 
--   **EIP**: We connected private IPs to public IPs through this
-    > service.
+-   **EIP**: We connected private IPs to public IPs through this service.
 
-**Innovatıons**
+**INNOVATIONS**
 
 -   Analyzing how compatible the product is with the person from the
     photo of a product that is not in the user\'s native language and
@@ -116,29 +108,29 @@ common allergen.
     content of the products with the help of the light of their phone
     using the application we made.
 
-**Business Value**​​​​​​​
->
-> **CodeCheck** is an app that helps you visualize vital nutrition
-> information in a simple and intuitive manner. You can scan barcodes or
-> EAN numbers or enter products manually to get a full reading of the
-> ingredients and determine whether they are vegan, vegetarian, or
-> gluten-free.
->
->     + Availability of mobile application
->
->     - Inability to analyze the content of products
->
-> **EWG\'s Healthy Living** is an app that helps you understand your
-> food, personal care, and other household products better. You can scan
-> a barcode or search product names to quickly identify and analyze
-> ingredients and see their overall rating, with 1.0 being the best and
-> 10.0 being the worst in terms of risk and toxicity.
->
->                     + Mobile applications are available
->
->                      - Product content cannot be analyzed
->
- **Conclusion**
+**BUSINESS VALUE**​​​​​​​
+
+ **CodeCheck** is an app that helps you visualize vital nutrition
+ information in a simple and intuitive manner. You can scan barcodes or
+ EAN numbers or enter products manually to get a full reading of the
+ ingredients and determine whether they are vegan, vegetarian, or
+ gluten-free.
+
+     + Availability of mobile application
+
+     - Inability to analyze the content of products
+
+ **EWG\'s Healthy Living** is an app that helps you understand your
+ food, personal care, and other household products better. You can scan
+ a barcode or search product names to quickly identify and analyze
+ ingredients and see their overall rating, with 1.0 being the best and
+ 10.0 being the worst in terms of risk and toxicity.
+
+                     + Mobile applications are available
+
+                      - Product content cannot be analyzed
+
+ **CONCLUSION**
 
 -   As a result of this project, visually impaired people will be able
     to learn the content of a product comfortably.
@@ -150,14 +142,14 @@ common allergen.
 -   In short, our overall goal is to create conscious consumers.
 
  You can access the source code from this link below.
->
+
 > **https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu**
 >
 > **Project Manager:** Alperen ÇELİK**​​​​​​​**
 >
 > **Researcher:** Onur MALCI
 >
-> **Developer: **Ergün Deniz BUYRUK
+> **Developer:** Ergün Deniz BUYRUK
 >
 > **​​**
 
