@@ -30,7 +30,7 @@ good for them.
 
                                             
 **OUTPUT**
-> ***The product is a snack made of corn meal, edible vegetable oil, spices,
+> The product is a snack made of corn meal, edible vegetable oil, spices,
 >and condiments. It contains approximately 469.5 kcal of energy, 7.0 g of
 >protein, 71.0 g of total carbohydrates, and 3.59 g of sugars per 100 g
 >serving. The product also contains milk solids, maltodextrin, dextrose,
@@ -48,9 +48,11 @@ good for them.
 >for individuals with gluten-related allergies or intolerances.
 >
 >**Hazelnut**: The product ***does not contain hazelnut***, which is a
->common allergen.***
->
-**Technical Architecture of the Project:**
+>common allergen.
+
+
+
+## **Technical Architecture of the Project:**
 
 
 ![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/20349f9f-9f85-4134-a2b5-33870434fe3b)
@@ -72,7 +74,7 @@ good for them.
     compatible this product is with the person and makes a detailed
     analysis about the product.
 
-**AI FIELD STEPS**
+## **AI FIELD STEPS**
 
 -   Making image-to-text with EasyOcr library with the image given by the use
 
@@ -86,7 +88,7 @@ good for them.
 
 -   Measuring the health of the product with a metric between 0 and 100.
 
-**SERVICES FIELD STEPS**
+## **SERVICES FIELD STEPS**
 
 -   **RDS**: Here we stored user information through MySQL service.
 
@@ -98,7 +100,7 @@ good for them.
 
 -   **EIP**: We connected private IPs to public IPs through this service.
 
-**INNOVATIONS**
+## **INNOVATIONS**
 
 -   Analyzing how compatible the product is with the person from the
     photo of a product that is not in the user\'s native language and
@@ -108,7 +110,7 @@ good for them.
     content of the products with the help of the light of their phone
     using the application we made.
 
-**BUSINESS VALUE**​​​​​​​
+## **BUSINESS VALUE**​​​​​​​
 
  **CodeCheck** is an app that helps you visualize vital nutrition
  information in a simple and intuitive manner. You can scan barcodes or
@@ -130,7 +132,7 @@ good for them.
 
                       - Product content cannot be analyzed
 
- **CONCLUSION**
+ ## **CONCLUSION**
 
 -   As a result of this project, visually impaired people will be able
     to learn the content of a product comfortably.
