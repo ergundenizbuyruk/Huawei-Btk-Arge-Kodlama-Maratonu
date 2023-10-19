@@ -24,9 +24,9 @@ good for them.
 
 **Example**
 
-![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/e2545374-c878-487e-b706-130b016314ad){width="3.03125in"height="3.4154932195975505in"} 
+![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/e2545374-c878-487e-b706-130b016314ad)
 
-![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/33cc44b6-f3ae-4f63-bc08-2e0fc70aea06){width="0.8125in" height="1.0654002624671917in"}
+                            ![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/33cc44b6-f3ae-4f63-bc08-2e0fc70aea06)
 
                                             
 
@@ -53,7 +53,7 @@ common allergen.
 **Technical Architecture of the Project:**
 
 
-![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/20349f9f-9f85-4134-a2b5-33870434fe3b){width="6.291666666666667in" height="3.3958333333333335in"}
+![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/20349f9f-9f85-4134-a2b5-33870434fe3b)
 
 **Functıons**
 
