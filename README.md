@@ -1,4 +1,4 @@
-# huawei-btk-arge-kodlama-maratonu
+![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/81ecccd2-a76e-4f87-8f11-38124f16dcea)# huawei-btk-arge-kodlama-maratonu
 
 [DEMO] Mind Benders: Personalized Product Analysis with Artificial Intelligence
  Personalized Product Analysis with Artificial Intelligence
@@ -6,7 +6,9 @@ Our application is designed to help users make informed and healthy choices when
 The application also sends warnings and suggestions via e-mail at certain intervals according to the user's preferences and needs. In addition, our application aims to help visually impaired people and people travelling abroad to recognise products and learn more easily about their contents. Our app aims to promote a healthy lifestyle and empower users with the information they need to buy products that are good for them.
 
 Example
-           
+
+![image](https://github.com/ergundenizbuyruk/Huawei-Btk-Arge-Kodlama-Maratonu/assets/83646458/c49999e6-0a43-439f-acba-eb8cabb855d5)
+
                                      
                                             
 The product is a snack made of corn meal, edible vegetable oil, spices, and condiments. It contains approximately 469.5 kcal of energy, 7.0 g of protein, 71.0 g of total carbohydrates, and 3.59 g of sugars per 100 g serving. The product also contains milk solids, maltodextrin, dextrose, and acidity regulators.
